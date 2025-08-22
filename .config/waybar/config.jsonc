@@ -1,0 +1,77 @@
+// -*- mode: jsonc -*-
+{
+  // "layer": "top", // Waybar at top layer
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  // "height": 30, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 8, // Gaps between modules (4px)
+  "margin-left": 6,
+  "margin-right": 6,
+  "margin-top": 6,
+  // Choose the order of the modules
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "wireplumber",
+    "backlight",
+    "battery",
+    "clock",
+    "tray",
+    "custom/powermenu"
+  ],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": " ",
+      "default": " "
+    },
+    "on-scroll-down": "hyprctl dispatch workspace prev",
+    "on-scroll-up": "hyprctl dispatch workspace next"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": " ",
+      "deactivated": " "
+    }
+  },
+  "wireplumber": {
+    "format": "  {volume}%",
+    "format-muted": "  Muted",
+    "on-click": "pavucontrol"
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "  {:%H:%M}",
+    "format-alt": "  {:%H:%M %a %d %b %Y}"
+  },
+  "backlight": {
+    "format": "  {percent}%"
+  },
+  "battery": {
+    "states": {
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ]
+  },
+  "custom/powermenu": {
+    "format": " ",
+    "on-click": "~/.local/bin/powermenu.sh"
+  }
+}

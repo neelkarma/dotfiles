@@ -1,0 +1,14 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "42f64c0"
+hash = "b3f1d6ec3721d4061aad5f69cddb0cf9"
+
+[[plugin.deps]]
+use = "boydaihungst/gvfs"
+rev = "9640407"
+hash = "37c4b4c6338316921821d35ad13d764d"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "d04a298"
+hash = "288a0dedd5d13b28605cf82c05326dcd"

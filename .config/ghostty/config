@@ -1,0 +1,31 @@
+theme = catppuccin-mocha
+font-family = JetBrains Mono NF
+font-size = 11
+command = fish
+gtk-single-instance = true
+
+keybind = ctrl+a>t=new_tab
+keybind = ctrl+a>l=next_tab
+keybind = ctrl+a>h=previous_tab
+keybind = ctrl+a>-=new_split:down
+keybind = ctrl+a>shift+\=new_split:right
+
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:down
+keybind = ctrl+k=goto_split:up
+keybind = ctrl+l=goto_split:right
+
+keybind = alt+h=resize_split:left,10
+keybind = alt+j=resize_split:down,10
+keybind = alt+k=resize_split:up,10
+keybind = alt+l=resize_split:right,10
+
+keybind = ctrl+one=goto_tab:1
+keybind = ctrl+two=goto_tab:2
+keybind = ctrl+three=goto_tab:3
+keybind = ctrl+four=goto_tab:4
+keybind = ctrl+five=goto_tab:5
+keybind = ctrl+six=goto_tab:6
+keybind = ctrl+seven=goto_tab:7
+keybind = ctrl+eight=goto_tab:8
+keybind = ctrl+nine=goto_tab:9

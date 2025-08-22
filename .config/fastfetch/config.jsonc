@@ -1,0 +1,61 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/waltuh.txt",
+    "color": {
+      "1": "blue"
+    },
+    "padding": {
+      "left": 2
+    }
+  },
+  "display": {
+    "separator": " | ",
+    "color": {
+      "keys": "blue",
+      "title": "blue",
+      "separator": "dim_"
+    }
+  },
+  "modules": [
+    "title",
+    {
+      "type": "separator",
+      "outputColor": "dim_"
+    },
+    {
+      "type": "uptime",
+      "key": "RUN"
+    },
+    {
+      "type": "packages",
+      "key": "PKG"
+    },
+    {
+      "type": "cpu",
+      "temp": true,
+      "format": "{name} x{cores-logical} @ {freq-max} ({temperature})",
+      "key": "CPU"
+    },
+    {
+      "type": "gpu",
+      "temp": true,
+      "format": "{name} ({temperature})",
+      "key": "GPU"
+    },
+    {
+      "type": "memory",
+      "key": "MEM"
+    },
+    {
+      "type": "disk",
+      "key": "DSK"
+    },
+    {
+      "type": "battery",
+      "key": "BAT"
+    },
+    "break",
+    "colors"
+  ]
+}

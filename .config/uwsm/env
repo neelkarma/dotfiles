@@ -1,0 +1,7 @@
+export QT_QPA_PLATFORMTHEME=gtk3
+export XCURSOR_SIZE=24
+export HYPRCURSOR_SIZE=24
+export FCEDIT=nvim
+export EDITOR=nvim
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=gasp -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
+eval "$(ssh-agent -s)"

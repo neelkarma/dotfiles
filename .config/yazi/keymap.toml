@@ -1,0 +1,19 @@
+[[mgr.prepend_keymap]]
+on  = ["M", "m"]
+run = "plugin mount"
+desc = "Open udisksctl view"
+
+[[mgr.prepend_keymap]]
+on = ["M", "g"]
+run = "plugin gvfs -- select-then-mount --jump"
+desc = "Mount a GVFS volume"
+
+[[mgr.prepend_keymap]]
+on = ["M", "u"]
+run = "plugin gvfs -- select-then-unmount"
+desc = "Unmount a GVFS volume"
+
+[[mgr.prepend_keymap]]
+on = ["M", "U"]
+run = "plugin gvfs -- select-then-unmount --eject --force"
+desc = "Force unmount a GVFS volume"
