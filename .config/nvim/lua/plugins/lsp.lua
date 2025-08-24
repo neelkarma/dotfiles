@@ -24,6 +24,7 @@ return {
 
       -- config lsps not installed by mason
       vim.lsp.enable("dartls")
+      vim.lsp.enable("zls")
     end
   },
   {
