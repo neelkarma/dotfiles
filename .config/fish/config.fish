@@ -22,6 +22,11 @@ if status is-interactive;
     rm -f -- "$tmp"
   end
 
+  # scratchpad script
+  function scratchpad
+    nvim ~/Documents/scratchpad.md
+  end
+
   # fetch script
   echo
   fastfetch
