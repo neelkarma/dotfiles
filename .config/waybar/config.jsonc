@@ -23,11 +23,7 @@
     "custom/powermenu"
   ],
   "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "active": " ",
-      "default": " "
-    },
+    "format": "{name}",
     "on-scroll-down": "hyprctl dispatch workspace prev",
     "on-scroll-up": "hyprctl dispatch workspace next"
   },
