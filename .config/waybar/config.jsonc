@@ -10,8 +10,8 @@
   "margin-top": 6,
   // Choose the order of the modules
   "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/window"
+    "sway/workspaces",
+    "sway/window"
   ],
   "modules-right": [
     "idle_inhibitor",
@@ -22,10 +22,8 @@
     "tray",
     "custom/powermenu"
   ],
-  "hyprland/workspaces": {
-    "format": "{name}",
-    "on-scroll-down": "hyprctl dispatch workspace prev",
-    "on-scroll-up": "hyprctl dispatch workspace next"
+  "sway/workspaces": {
+    "format": "{name}"
   },
   "idle_inhibitor": {
     "format": "{icon}",
