@@ -1,0 +1,18 @@
+profile secondary {
+	output HDMI-A-1 enable
+	output eDP-1 disable
+}
+
+profile mirror {
+	output HDMI-A-1 position 0,0
+	output eDP-1 position 0,0
+}
+
+profile primary {
+	output HDMI-A-1 disable
+	output eDP-1 enable
+}
+
+profile {
+	output eDP-1 enable
+}
