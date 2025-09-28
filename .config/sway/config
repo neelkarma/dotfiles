@@ -155,4 +155,7 @@ bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ t
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
+# make firefox pip window float
+for_window [title="Picture-in-Picture"] floating enable
+
 include /etc/sway/config.d/*
