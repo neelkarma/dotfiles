@@ -13,17 +13,15 @@ set $right l
 
 ### Appearance
 
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/Pictures/wallpapers/hollowknight.png fill
 
-default_border none
-default_floating_border none
-titlebar_padding 1
-titlebar_border_thickness 1
-default_border pixel 1
-font pango:monospace 0.001
+#default_border none
+#default_floating_border none
+#titlebar_padding 1
+#titlebar_border_thickness 1
+#default_border pixel 1
 
 gaps inner 6
-gaps outer 6
 
 ### Input Configuration
 
@@ -31,8 +29,12 @@ input type:touchpad {
     dwt enabled
     tap enabled
     natural_scroll enabled
-    middle_emulation enabled
 }
+
+### Init
+# most is handled by uwsm and systemctl
+
+exec kanshi
 
 ### Binds
 
