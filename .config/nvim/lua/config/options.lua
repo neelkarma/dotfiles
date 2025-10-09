@@ -12,6 +12,7 @@ opt.termguicolors = true
 opt.winborder = "rounded"
 
 -- indenting
+opt.breakindent = true
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.smartindent = true
@@ -23,22 +24,22 @@ opt.number = true
 opt.relativenumber = true
 opt.signcolumn = "yes"
 
+-- other opts
+opt.wrap = false
+opt.scrolloff = 5
+opt.mouse = "a"
+opt.showmode = false
+opt.undofile = true
+opt.confirm = true
+
+vim.schedule(function() opt.clipboard = "unnamedplus" end)
+
 -- filetypes
 vim.filetype.add({
   extension = {
     md = "markdown"
   }
 })
-
--- other opts
-opt.wrap = false
-opt.scrolloff = 5
-
--- xournalpp shortcut
-vim.api.nvim_create_user_command("XoppOpen", function()
-  local path = vim.api.nvim_buf_get_name(0):match("^(.+)%..+$") .. ".xopp"
-  vim.fn.system("xournalpp " .. path)
-end, {})
 
 -- Open typst pdf with zathura
 vim.api.nvim_create_user_command("TypstOpen", function()
@@ -61,6 +62,15 @@ end, {})
 
 -- configure in-editor diagnostic display
 vim.diagnostic.config({
+  severity_sort = true,
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = '󰅚 ',
+      [vim.diagnostic.severity.WARN] = '󰀪 ',
+      [vim.diagnostic.severity.INFO] = '󰋽 ',
+      [vim.diagnostic.severity.HINT] = '󰌶 ',
+    },
+  },
   virtual_lines = {
     current_line = true
   }
