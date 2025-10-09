@@ -4,9 +4,16 @@ local map = vim.keymap.set
 map("i", "jj", "<Esc>")
 
 -- lsp binds
-map("n", "rn", function() vim.lsp.buf.rename() end)
-map({ "v", "n" }, "ga", function() vim.lsp.buf.code_action() end)
-map("n", "K", function() vim.lsp.buf.hover() end)
+map("n", "rn", vim.lsp.buf.rename)
+map({ "v", "n" }, "ga", vim.lsp.buf.code_action)
+map("n", "K", vim.lsp.buf.hover)
+map("n", "gd", vim.lsp.buf.definition)
+map("n", "gD", vim.lsp.buf.type_definition)
+map("n", "gr", vim.lsp.buf.references)
+
+-- qfl binds
+map("n", "<M-j>", ":cnext<CR>")
+map("n", "<M-k>", ":cprev<CR>")
 
 -- more sensible wrapped line navigation
 map({ "v", "n" }, "j", "gj");

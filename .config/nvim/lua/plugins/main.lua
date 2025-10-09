@@ -60,29 +60,22 @@ return {
     end
   },
   {
-    "folke/snacks.nvim",
-    lazy = false,
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.8",
+    dependencies = { "nvim-lua/plenary.nvim" },
     keys = {
-      { "<C-n>", function() Snacks.explorer({ hidden = true }) end,     desc = "toggle explorer" },
-      { "<C-p>", function() Snacks.picker.files({ hidden = true }) end, desc = "find files" },
-      { "gs",    function() Snacks.picker.lsp_symbols() end,            desc = "find lsp document symbols" },
-      { "gd",    function() Snacks.picker.lsp_definitions() end,        desc = "find lsp definitions" },
-      { "gr",    function() Snacks.picker.lsp_references() end,         desc = "find lsp references" },
-      { "gt",    function() Snacks.picker.lsp_type_definitions() end,   desc = "find lsp type definitions" },
-      { "gf",    function() Snacks.picker.grep() end,                   desc = "live grep" },
-      { "gm",    function() Snacks.picker.marks() end,                  desc = "find marks" },
-      { "gv",    function() Snacks.lazygit() end,                       desc = "lazygit" },
-    },
-    config = function()
-      require("snacks").setup({
-        explorer = {},
-        indent = {
-          enabled = true,
-          animate = { enabled = false }
-        },
-        picker = {},
-      })
-    end
+      { "<C-p>", function() require("telescope.builtin").find_files() end,            desc = "find files" },
+      { "gs",    function() require("telescope.builtin").lsp_document_symbols() end,  desc = "find lsp document symbols" },
+      { "gS",    function() require("telescope.builtin").lsp_workspace_symbols() end, desc = "find lsp document symbols" },
+      { "gf",    function() require("telescope.builtin").live_grep() end,             desc = "live grep" },
+    }
+  },
+  {
+    "nvim-tree/nvim-tree.lua",
+    config = true,
+    keys = {
+      { "<C-n>", ":NvimTreeToggle<CR>", desc = "toggle file tree" }
+    }
   },
   {
     "nvim-treesitter/nvim-treesitter",
