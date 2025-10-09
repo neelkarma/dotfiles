@@ -104,16 +104,6 @@ return {
     end
   },
   {
-    "folke/trouble.nvim",
-    cmd = "Trouble",
-    keys = {
-      { "ge", "<cmd>Trouble diagnostics toggle focus=true<cr>", desc = "toggle trouble diagnostics" }
-    },
-    config = function()
-      require("trouble").config()
-    end
-  },
-  {
     "stevearc/conform.nvim",
     config = function()
       require("conform").setup({
