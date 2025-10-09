@@ -33,7 +33,6 @@ return {
 
       require("mini.comment").setup()
       require("mini.cursorword").setup()
-      -- require("mini.pairs").setup()
 
       -- use vim-surround-like keymap
       require("mini.surround").setup({
@@ -58,6 +57,11 @@ return {
       -- Make special mapping for "add surrounding for line"
       vim.keymap.set("n", "yss", "ys_", { remap = true })
     end
+  },
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = true
   },
   {
     "nvim-telescope/telescope.nvim",
