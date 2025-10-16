@@ -37,7 +37,8 @@ vim.schedule(function() opt.clipboard = "unnamedplus" end)
 -- filetypes
 vim.filetype.add({
   extension = {
-    md = "markdown"
+    md = "markdown",
+    svx = "markdown"
   }
 })
 
