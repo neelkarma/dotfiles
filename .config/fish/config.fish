@@ -22,6 +22,10 @@ if status is-interactive;
     rm -f -- "$tmp"
   end
 
+  function qrgen
+    qrencode $argv -o - -t utf8
+  end
+
   # scratchpad script
   function scratchpad
     nvim ~/Documents/scratchpad.md
