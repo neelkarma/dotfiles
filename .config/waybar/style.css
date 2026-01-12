@@ -30,9 +30,6 @@ window#waybar {
   border-radius: 1080px;
   padding: 0 4px;
   font-weight: normal;
-
-  transition: background-color 200ms, color 200ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 #workspaces button:hover {
@@ -81,8 +78,6 @@ window#waybar {
 #backlight {}
 
 #wireplumber {
-  transition: color 200ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 #wireplumber.muted {
@@ -103,8 +98,6 @@ window#waybar {
 #idle_inhibitor {
   border-radius: 1080px;
   padding: 4px 8px;
-  transition: background-color 200ms, color 200ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 #idle_inhibitor.activated {
