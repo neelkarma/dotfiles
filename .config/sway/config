@@ -82,7 +82,7 @@ bindsym $mod+Shift+c reload
 # launch various software
 bindsym $mod+w exec zen-browser
 bindsym $mod+r exec fuzzel
-bindsym $mod+Return exec ghostty
+bindsym $mod+Return exec ghostty +new-window
 bindsym $mod+Shift+p exec ~/.local/bin/powermenu.sh
 bindsym $mod+c exec hyprpicker -a
 bindsym $mod+b exec systemctl --user restart waybar
