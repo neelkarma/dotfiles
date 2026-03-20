@@ -62,6 +62,11 @@ input type:touchpad {
     natural_scroll enabled
 }
 
+input type:keyboard {
+    xkb_layout us
+    xkb_variant intl
+}
+
 ### Init
 # most is handled by uwsm and systemctl
 
