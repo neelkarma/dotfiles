@@ -172,10 +172,8 @@ local map_accept_completion = function(key)
   map("i", key, function()
     -- If there is selected item in popup, accept it with <C-y>
     if vim.fn.complete_info()["selected"] ~= -1 then return "\25" end
-    -- Fall back to plain `<CR>`. You might want to customize according
-    -- to other plugins. For example if 'mini.pairs' is set up, replace
-    -- next line with `return MiniPairs.cr()`
-    return "\r"
+    -- Fall back to whatever the key would've done anyways.
+    return vim.api.nvim_replace_termcodes(key, true, false, true)
   end, { expr = true })
 end
 map_accept_completion("<CR>")
