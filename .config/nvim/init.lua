@@ -103,6 +103,7 @@ vim.pack.add({
 
 vim.cmd.colorscheme "catppuccin-nvim"
 
+require("guess-indent").setup({})
 require("nvim-autopairs").setup({})
 require("lualine").setup()
 require("gitsigns").setup()
