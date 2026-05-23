@@ -1,3 +1,5 @@
+# original code from https://github.com/sshilovsky/fish-helix/blob/main/functions/fish_helix_command.fish
+
 # FIXME this can't be called in sequence in general case,
 # because of unsynchronized `commandline -f` and `commandline -C`
 

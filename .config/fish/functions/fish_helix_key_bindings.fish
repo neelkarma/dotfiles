@@ -1,3 +1,5 @@
+# original code from https://github.com/sshilovsky/fish-helix/blob/main/functions/fish_helix_key_bindings.fish
+
 # IMPORTANT!!!
 #
 # When defining your own bindings using fish_helix_command, be aware that it can break

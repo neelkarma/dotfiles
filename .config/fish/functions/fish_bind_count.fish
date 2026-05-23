@@ -1,3 +1,5 @@
+# original code from https://github.com/sshilovsky/fish-helix/blob/main/functions/fish_helix_key_bindings.fish
+
 function fish_bind_count
     argparse h/help z/zero r/read -- $argv
     or return 1

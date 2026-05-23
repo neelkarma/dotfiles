@@ -1,3 +1,5 @@
+# original code from https://github.com/sshilovsky/fish-helix/blob/main/functions/fish_default_mode_prompt.fish
+
 function fish_default_mode_prompt --description "Display vi/helix prompt mode"
     # Do nothing if not in vi mode
     if test "$fish_key_bindings" = fish_vi_key_bindings
