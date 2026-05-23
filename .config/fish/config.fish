@@ -9,7 +9,7 @@ if status is-interactive
     alias sudo="doas"
 
     # keybinds
-    bind ctrl-space accept-autosuggestion
+    bind -M insert ctrl-space accept-autosuggestion
     bind -M insert -m default jj repaint
 
     # init scripts
