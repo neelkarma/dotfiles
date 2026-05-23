@@ -6,6 +6,7 @@ if status is-interactive;
   alias ls="eza -la"
   alias cd="z"
   alias c="clear"
+  alias sudo="doas"
 
   # init scripts
   zoxide init fish | source

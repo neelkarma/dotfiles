@@ -1,0 +1,10 @@
+[language-server.tinymist]
+config = { formatterMode = "typstyle", exportPdf = "onType" }
+
+[[language]]
+name = "typst"
+soft-wrap = { enable = true }
+
+[[language]]
+name = "markdown"
+soft-wrap = { enable = true }
