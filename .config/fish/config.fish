@@ -33,7 +33,7 @@ if status is-interactive
 
     # scratchpad script
     function scratchpad
-        nvim ~/Documents/scratchpad.md
+        helix ~/Documents/scratchpad.md
     end
 
     # fetch script
