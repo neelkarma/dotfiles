@@ -29,21 +29,6 @@
   "edit_predictions": {
     "disabled_globs": ["*"],
   },
-  "context_servers": {
-    "mcp-server-context7": {
-      "settings": {},
-      "enabled": true,
-      "url": "https://mcp.context7.com/mcp",
-      "headers": {
-        "CONTEXT7_API_KEY": "ctx7sk-75a05fdc-27d8-48f2-83b7-9d6414647694",
-      },
-    },
-    "mcp-server-svelte": {
-      "settings": {},
-      "enabled": true,
-      "url": "https://mcp.svelte.dev/mcp",
-    },
-  },
   "agent": {
     "dock": "right",
     "inline_assistant_model": {
