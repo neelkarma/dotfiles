@@ -6,7 +6,6 @@ if status is-interactive
     alias ls="eza -la"
     alias cd="z"
     alias c="clear"
-    alias sudo="doas"
 
     # keybinds
     bind -M insert ctrl-space accept-autosuggestion
