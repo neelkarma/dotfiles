@@ -7,42 +7,23 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "helix_mode": true,
-  "cli_default_open_behavior": "existing_window",
-  "project_panel": {
-    "dock": "left",
-  },
-  "outline_panel": {
-    "dock": "left",
-  },
-  "collaboration_panel": {
-    "dock": "left",
-  },
-  "git_panel": {
-    "dock": "left",
-  },
-  "agent_servers": {
-    "opencode": {
-      "type": "registry",
-    },
-  },
-  "edit_predictions": {
-    "disabled_globs": ["*"],
-  },
   "agent": {
-    "dock": "right",
     "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gemini-3.1-pro-preview",
+      "provider": "openrouter",
+      "model": "deepseek/deepseek-v4-flash",
+      "enable_thinking": false,
     },
     "default_model": {
-      "enable_thinking": true,
-      "effort": "high",
-      "provider": "copilot_chat",
-      "model": "gemini-3.1-pro-preview",
+      "provider": "openrouter",
+      "model": "openrouter/deepseek-v4-flash",
+      "enable_thinking": false,
     },
+    "favorite_models": [],
     "model_parameters": [],
   },
+  "show_edit_predictions": false,
+  "helix_mode": true,
+  "cli_default_open_behavior": "existing_window",
   "terminal": {
     "shell": {
       "program": "fish",
@@ -56,7 +37,6 @@
   "ui_font_family": "Inter",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "redact_private_values": true,
-  "vim_mode": false,
   "ui_font_size": 16,
   "buffer_font_size": 14.0,
   "theme": {
@@ -69,7 +49,7 @@
       "tab_size": 4,
     },
     "Python": {
-      "language_servers": ["basedpyright", "ruff"],
+      "language_servers": ["ty", "ruff"],
       "tab_size": 4,
     },
     "SQL": {
