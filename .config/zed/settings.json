@@ -7,30 +7,32 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "semantic_tokens": "combined",
+  "inlay_hints": {
+    "enabled": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
   "agent": {
+    "thinking_display": "preview",
+    "default_profile": "write",
     "inline_assistant_model": {
       "provider": "openrouter",
-      "model": "deepseek/deepseek-v4-flash",
-      "enable_thinking": false,
-    },
-    "default_model": {
-      "provider": "openrouter",
-      "model": "openrouter/deepseek-v4-flash",
-      "enable_thinking": false,
-    },
-    "favorite_models": [],
-    "model_parameters": [],
+      "model": "glm/glm-5.3-flash",
+      "enable_thinking": false
+    }
   },
   "show_edit_predictions": false,
   "helix_mode": true,
   "cli_default_open_behavior": "existing_window",
   "terminal": {
     "shell": {
-      "program": "fish",
+      "program": "fish"
     },
     "env": {
-      "EDITOR": "zeditor --wait",
-    },
+      "EDITOR": "zeditor --wait"
+    }
   },
   "colorize_brackets": true,
   "tab_size": 2,
@@ -42,35 +44,132 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
   },
   "languages": {
     "Zig": {
-      "tab_size": 4,
+      "tab_size": 4
     },
     "Python": {
       "language_servers": ["ty", "ruff"],
-      "tab_size": 4,
+      "tab_size": 4
     },
     "SQL": {
-      "tab_size": 4,
+      "tab_size": 4
     },
     "Java": {
-      "tab_size": 4,
+      "tab_size": 4
     },
+    "Rust": {
+      "tab_size": 4,
+      "formatter": "language_server"
+    },
+    "Dart": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll": true
+      }
+    },
+    "CSS": {
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "HTML": {
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "JavaScript": {
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "JSON": {
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "JSONC": {
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "Markdown": {
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "TypeScript": {
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "TSX": {
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "YAML": {
+      "format_on_save": "on",
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    }
   },
   "file_types": {
-    "Markdown": ["svx"],
+    "Markdown": ["svx"]
   },
   "prettier": {
-    "allowed": true,
+    "allowed": false
   },
   "format_on_save": "on",
   "lsp": {
     "zls": {
       "settings": {
-        "enable_build_on_save": true,
-      },
-    },
-  },
+        "zls": {
+          "enable_build_on_save": true
+        }
+      }
+    }
+  }
 }
