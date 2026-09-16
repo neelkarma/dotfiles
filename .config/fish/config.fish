@@ -6,6 +6,7 @@ if status is-interactive
     alias ls="eza -la"
     alias cd="z"
     alias c="clear"
+    alias nopi="nono run --profile pi --allow-cwd pi"
 
     # keybinds
     bind -M insert ctrl-space accept-autosuggestion
