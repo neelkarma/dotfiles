@@ -154,6 +154,14 @@
           }
         }
       ]
+    },
+    "C": {
+      "format_on_save": "off",
+      "tab_size": 4
+    },
+    "C++": {
+      "format_on_save": "off",
+      "tab_size": 4
     }
   },
   "file_types": {
