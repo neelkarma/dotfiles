@@ -1,0 +1,47 @@
+Config(
+  enable_power_actions: false,
+  custom_actions: [
+    (
+      title: "Lock",
+      command: "loginctl lock-session",
+      description: "Lock the session screen",
+      icon: "system-lock-screen",
+      confirm: false,
+    ),
+    (
+      title: "Log out",
+      command: "hyprshutdown",
+      description: "Terminate the session",
+      icon: "system-log-out",
+      confirm: true,
+    ),
+    (
+      title: "Power off",
+      command: "hyprshutdown -t 'Shutting down...' --post-cmd 'systemctl poweroff'",
+      description: "Shut down the system",
+      icon: "system-shutdown",
+      confirm: true,
+    ),
+    (
+      title: "Reboot",
+      command: "hyprshutdown -t 'Rebooting...' --post-cmd 'systemctl reboot'",
+      description: "Restart the system",
+      icon: "system-reboot",
+      confirm: true,
+    ),
+    (
+      title: "Suspend",
+      command: "systemctl suspend",
+      description: "Suspend the system to RAM",
+      icon: "system-suspend",
+      confirm: false,
+    ),
+    (
+      title: "Hibernate",
+      command: "systemctl hibernate || pm-hibernate",
+      description: "Suspend the system to disk",
+      icon: "system-suspend-hibernate",
+      confirm: false,
+    ),
+  ],
+)
