@@ -347,6 +347,15 @@ hl.window_rule({
     no_focus = true,
 })
 
+hl.window_rule({
+    name = "floating-browser-pip",
+    match = {
+        title = "Picture-in-Picture"
+    },
+    float = true,
+    pin = true
+})
+
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
 --     name  = "no-anim-overlay",
