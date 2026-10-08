@@ -37,6 +37,8 @@ hl.monitor({
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function () 
+  hl.exec_cmd("/usr/lib/pam_kwallet_init")
+  hl.exec_cmd("udiskie")
   hl.exec_cmd("blueman-applet")
   hl.exec_cmd("hyprsunset")
   hl.exec_cmd("hypridle")
